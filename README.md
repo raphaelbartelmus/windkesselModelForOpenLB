@@ -10,6 +10,6 @@ This repository contains an implementation of the three element windkessel (3WK)
     - adjust the definition of the location inlets and outlets **twice**, in **`prepareGeometry(...)`** and ll. 507-562
     - adjust the definition of inlets and outlets in **`prepareLattice(...)`**
     - adjust the number of 3WK outlets in the definition and use of **`rkUpdtater(...)`** and in **`setBoundatryValues(...)`**
-    - adjust the 3WK-parameters in ll. 87-114, 447-456 and in the definitiion of **`rkUpdtater(...)`**
+    - adjust the 3WK-parameters in ll. 87-114, 447-456 and in the definition of **`rkUpdtater(...)`**
 5. Set the parameters in ll. 33-67 to your needs
 6. compile the program with `make` and run it
