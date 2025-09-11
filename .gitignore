@@ -39,3 +39,9 @@
 
 # debug information files
 *.dwo
+
+# do not share the geometry
+.stl
+
+# do not share the results
+tmp
