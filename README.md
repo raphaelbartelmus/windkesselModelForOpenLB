@@ -9,7 +9,7 @@ This repository contains an implementation of the three element windkessel (3WK)
     - change the name of the .stl file in line 465 to match the name of your file
     - adjust the definition of the location of inlets and outlets **twice**, in **`prepareGeometry(...)`** and lines 507-562
     - adjust the definition of inlets and outlets in **`prepareLattice(...)`**
-    - adjust the number of 3WK outlets in the definition and use of **`rkUpdater(...)`** and in **`setBoundaryValues(...)`**
-    - adjust the 3WK-parameters in lines 87-114, lines 447-456 and in the definition of **`rkUpdater(...)`**
+    - adjust the number of 3WK outlets in the definition and use of **`windkesselUpdater(...)`** and in **`setBoundaryValues(...)`**
+    - adjust the 3WK-parameters in lines 87-114, lines 447-456 and in the definition of **`windkesselUpdater(...)`**
 5. Set the parameters in lines 33-67 to your needs
 6. Compile the program with `make` and run it
