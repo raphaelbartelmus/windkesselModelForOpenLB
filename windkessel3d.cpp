@@ -334,7 +334,7 @@ void getResults(SuperLattice<T, DESCRIPTOR>&  sLattice,
   timer.print(iT);
 }
 
-void rkUpdater(SuperPlaneIntegralF3D<T>& velocityIntegralDesc,
+void windkesselUpdater(SuperPlaneIntegralF3D<T>& velocityIntegralDesc,
                SuperPlaneIntegralF3D<T>& pressureIntegralDesc,
                SuperPlaneIntegralF3D<T>& velocityIntegralBCT,
                SuperPlaneIntegralF3D<T>& pressureIntegralBCT,
@@ -575,7 +575,7 @@ int main(int argc, char* argv[])
     }
 
     // === 8th Step: update 3WK model
-    rkUpdater(velocityPlaneDescending, pressurePlaneDescending,
+    windkesselUpdater(velocityPlaneDescending, pressurePlaneDescending,
               velocityPlaneBCT, pressurePlaneBCT, velocityPlaneLCCA,
               pressurePlaneLCCA, velocityPlaneLSA, pressurePlaneLSA, deltaT);
 
@@ -599,7 +599,7 @@ int main(int argc, char* argv[])
     }
 
     // === 8th Step: update 3WK model
-    rkUpdater(velocityPlaneDescending, pressurePlaneDescending,
+    windkesselUpdater(velocityPlaneDescending, pressurePlaneDescending,
               velocityPlaneBCT, pressurePlaneBCT, velocityPlaneLCCA,
               pressurePlaneLCCA, velocityPlaneLSA, pressurePlaneLSA, deltaT);
 
