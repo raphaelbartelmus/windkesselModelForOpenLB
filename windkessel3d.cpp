@@ -1,8 +1,8 @@
 /*  Lattice Boltzmann sample, written in C++, using the OpenLB
  *  library
  *
- *  Copyright (C) 2011-2014 Mathias J. Krause
- *  E-mail contact: info@openlb.net
+ *  by Raphael Bartelmus
+ *
  *  The most recent release of OpenLB can be downloaded at
  *  <http://www.openlb.net/>
  *
